@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="color-scheme" content="light dark">
+	<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Public Metro</title>
+	<style>
+		:root {
+			--gap: 12px;
+			--bg: #ffffff;
+			--surface: #ffffff;
+			--text: rgb(68, 68, 68);
+			--overlay: rgba(0, 0, 0, 0.45);
+		}
+		@media (prefers-color-scheme: dark) {
+			:root {
+				--bg: #0f1115;
+				--surface: #141824;
+				--text: #e7e9ee;
+				--overlay: rgba(0, 0, 0, 0.55);
+			}
+			.img-card .overlay {
+				color: #f3f4f6;
+			}
+		}
+		* {box-sizing: border-box;}
+		html {
+			background: var(--bg);
+		}
+		html, body {
+			background-color: var(--bg);
+		}
+		header {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 20px;
+			background: var(--bg);
+			color: var(--text);
+		}
+		header img {
+			display: block;
+		}
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: var(--bg);
+			color: var(--text);
+		}
+		/* Dark Mode Logo */
+		@media (prefers-color-scheme: dark) {
+			#site-logo {
+				content: url("PublicMetroLogo.webp");
+			}
+		}
+	</style>
+</head>
+<body>
+	<!-- Header -->
+	<header>
+		<img src="PublicMetroLogo.webp" alt="Public Metro" width="500px">
+	</header>
+	<!-- Content -->
+	<div class="container">
+		
+	</div>
+</body>
+</html>
